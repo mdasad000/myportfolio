@@ -13,4 +13,4 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript. It 
 - JavaScript - Interactivity and animations  
 
 ## Live Demo 🚀
-[View Portfolio]((https://soft-sundae-e5819a.netlify.app/))  
+Link : https://soft-sundae-e5819a.netlify.app/  
