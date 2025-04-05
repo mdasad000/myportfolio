@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Md Asad Ansari</span></h1>
+        <p class="typing-text">I'm a Web Developer</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn primary">Contact Me</a>
+          <a href="#projects" class="btn secondary">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a developer with experience in React, JavaScript, and front-end
+            development, always eager to learn and improve my skills. I enjoy
+            working on API-based projects and creating simple, user-friendly web
+            applications. Alongside coding, I explore AI tools, Blogger
+            integrations, and YouTube content creation, focusing on storytelling
+            and digital tools. I am also working on a travel booking platform
+            and developing useful online tools for everyday tasks. My goal is to
+            keep learning, building, and creating projects that make a
+            difference.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Text Analyzer" />
+          <h3>Text Analyzer</h3>
+          <p>
+            I developed a Text Analyzer using React that provides features like
+            word count, character count, case conversion, and whitespace
+            removal. It has a simple UI for quick and efficient text analysis,
+            improving my skills in React state management and event handling.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://text-analyzer-and-word-counter.netlify.app/"
+              class="btn"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/mdasad000/Your-Text-Analyzer"
+              class="btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="User Management System"
+          />
+          <h3>User Management System (API)</h3>
+          <p>
+            I developed a User Management System using React, allowing users to
+            add, edit, delete, and view user details. It interacts with an API
+            for data management and helped me improve my skills in handling
+            forms and CRUD operations**.
+          </p>
+          <div class="project-links">
+            <a href="https://usermanagementproj.netlify.app/" class="btn"
+              >Live Demo</a
+            >
+            <a href="https://github.com/mdasad000/User-Management" class="btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Portfolio Website" />
+          <h3>Portfolio Website</h3>
+          <p>
+            I created a personal portfolio website** using HTML, CSS, and
+            JavaScript to showcase my projects and skills. It features a clean
+            design, interactive elements, and a responsive layout. This project
+            helped me improve my frontend development and UI design skills.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-content">
+        <form id="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/mdasad000"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-asad-ansari-9b7aa1278/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
